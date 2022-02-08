@@ -6,8 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Título que vai aprecer na sua aba do navegador -->
         <title>Mapeando as tags do HTML5</title>
+       
    </head>
    <body>
+    <nav>
+        <!-- Representa a tag (ul )elemento HTML de Lista desordenada -->
+        <ul>
+            <!--  a tag (li) Lista dos Itens de um elemento -->
+            <li> <a href="tagssematicas.html">PAGINA 2</a> </li>
+        </ul>
+    </nav>
     <!-- Aqui é aprte mais importante onde vai aparecer na sua página --> 
      <!-- Cabeçalhos sequêncial pré definidos -->
         <h1>Cabeçalhos nivel 1</h1>
@@ -66,11 +74,11 @@
             <!-- Formulários - action essa tag para onde queremos enviar servidor , ou php-->
             <br>
             <hr>
-            <form action="" method="POST"></form>
+         <form action="" method="POST">
             <!-- Tag label (inline)representa uma legenda para um item ; input(inline) se quiser colocar em linhas diferente vc pode acrescentar uma div, porque ela é em block-->
             <div>
                 <label>Primeiro Nome </label>
-                <input type="text">
+                <input type="text" placeholder="coloque aqui seu nome">
             </div>
           <!-- para separar vc pode colocar com padding no css -->
             <div>
@@ -90,5 +98,42 @@
                     <option value="feminino">Feminino</option>
                 </select>
             </div>
+            <div>
+                <label>Data de nascimento </label>
+                <input type="date">
+            </div>
+
+            <div>
+                <label>Senha </label>
+                <input type="password">
+            </div>
+            <!--  Area de mensagens -->
+            <div>
+                <label>Mensagens </label>
+               <textarea name="mensagens" id="" cols="40" rows="05"></textarea>
+            </div>
+
+            <!-- Botão  dentro do formulário-->
+            <input type="submit" name="enviar" id="">
+        </form>
+        <!-- Botões dentro do formulário só funciona com php ou javascript -->
+        <button>Click aqui</button>
+        <!-- Imagens 9inline-->
+
+        <img src="./img/" alt="imagem de exemplo" width="100"  height="100">
+
+        <!-- Blockquote - tag de citação-->
+
+        <blockquote cite="https://google.com">Linguagem HTML5</blockquote>
+
+        <!--  Abreviação(abbr)-->
+
+        <p>Linguagem <abbr title="HTML5">Linguagem de marcação</abbr></p>
+
+        <!-- cite -->
+
+        <p><cite>A vida é bela</cite></p>
+
+        
    </body>
 </html>
