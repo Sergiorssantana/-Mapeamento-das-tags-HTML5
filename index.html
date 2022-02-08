@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapeando as tags do HTML5</title>
-</head>
-<body>
-    
-</body>
+   <head>
+        <!-- iNFORMAÇÕES QUE NÃO APRECE NA SUA PÁGINA -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título que vai aprecer na sua aba do navegador -->
+        <title>Mapeando as tags do HTML5</title>
+   </head>
+   <body>
+    <!-- Aqui é aprte mais importante onde vai aparecer na sua página --> 
+     <!-- Cabeçalhos sequêncial pré definidos -->
+        <h1>Cabeçalhos nivel 1</h1>
+        <h2>Cabeçalhos nivel 1</h2>
+        <h3>Cabeçalhos nivel 1</h3>
+        <h4>Cabeçalhos nivel 1</h4>
+        <h5>Cabeçalhos nivel 1</h5>
+        <h6>Cabeçalhos nivel 1</h6>
+
+        <!-- Parágrafos - Aqui o p está em inline -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, libero.</p>
+        <!--  Parágrafos - Aqui o p está em Block -->
+        <p>Lorem</p>
+        <!-- Nesse parágrafo abaixo tem o display block, como se fosse uma quebra de linha para baixo que pode ser modificado no CSS-->
+        <p>Lorem, ipsum dolor sit <strong>exemplo de tags inline</strong> consectetur adipisicing elit. Dolores odit facere cupiditate <em>essa tag deixa em italico</em> fuga sunt, veniam est aut esse optio. </p>
+
+        <!-- Links - atributos - pode direcionar para arquivo ou links externos/ target="_blank" abre em outra aba-->
+        <a href="https://www.google.com" target="_blank">Google</a>
+         <!-- Outro atributo é class -->
+         <!-- div é elemento display block -->
+            <div class="mapeamento"></div>
+
+            <!-- Tabelas - tables - thead(linhas) - tag (tr) serve para definir uma linha; e atag (th) colunnas; e a tag (td) são as célula de dados padrão em uma tabela HTML-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <!-- tbody -elemento encapsula um conjunto de linhas da tabela  -->
+            <tbody>
+                <tr>
+                    <td>Sérgio Roberto</td>
+                    <td>sergiorssantana@hotmail.com</td>
+                    <td>47</td>
+
+                </tr>
+
+                <tr>
+                    <td>Sérgio Filho</td>
+                    <td>sergiorssantana@hotmail.com</td>
+                    <td>06</td>
+
+                </tr>
+                <tr>
+                    <td>Leina</td>
+                    <td>sergiorssantana@hotmail.com</td>
+                    <td>41</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <!-- <br> tag pula linha e o hr é uma linha Horizontal-->
+            <!-- Formulários - action essa tag para onde queremos enviar servidor , ou php-->
+            <br>
+            <hr>
+            <form action="" method="POST"></form>
+            <!-- Tag label (inline)representa uma legenda para um item ; input(inline) se quiser colocar em linhas diferente vc pode acrescentar uma div, porque ela é em block-->
+            <div>
+                <label>Primeiro Nome </label>
+                <input type="text">
+            </div>
+          <!-- para separar vc pode colocar com padding no css -->
+            <div>
+                <label>Segundo Nome </label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label>E-mail</label>
+                <input type="email">
+            </div>
+            <!-- a tag select  representa as  opções dentro do menu  -->
+            <div>
+                <label>Gênero </label>
+                <select>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+   </body>
 </html>
